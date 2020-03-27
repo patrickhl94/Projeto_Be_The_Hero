@@ -4,9 +4,10 @@
   height: 100vh;
   margin: 0 auto;
 
+  padding: 0 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logon-container section.form {
