@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
@@ -9,7 +10,8 @@ import logoImg from '../../assets/logo.svg';
 export default function Profile() {
   const ongId = localStorage.getItem('ong_id');
   const ongName = localStorage.getItem('name');
-  const [casos, setCasos] = useState([])
+  const [casos, setCasos] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     api.get('profile', {
@@ -17,9 +19,9 @@ export default function Profile() {
         Authorization: ongId
       }
     }).then((response) => {
-      setCasos(response.data)
+      setCasos(response.data);
     }).catch((err) => {
-      alert('Erro ao carregar os casos.')
+      alert('Erro ao carregar os casos.');
     })
 
   }, [ongId])
@@ -33,11 +35,17 @@ export default function Profile() {
         }
       })
 
-      setCasos(casos.filter(caso => caso_id !== caso.id))
+      setCasos(casos.filter(caso => caso_id !== caso.id));
 
     } catch (error) {
-      alert('Erro ao deletar o caso.')
+      alert('Erro ao deletar o caso.');
     }
+  }
+
+  function handleLogout() {
+    localStorage.clear();
+    history.push('/');
+
   }
 
   return (
@@ -47,7 +55,7 @@ export default function Profile() {
         <span>Ben vinda, {ongName}</span>
 
         <Link to="/incidents/new" className="button">Cadastrar novo caso</Link>
-        <button type="button">
+        <button onClick={handleLogout} type="button">
           <FiPower size={18} color="#E02041" />
         </button>
       </header>
@@ -69,7 +77,7 @@ export default function Profile() {
               <p>
                 {
                   Intl.NumberFormat('pt-BR',
-                      { style: 'currency', currency: 'BRL' })
+                    { style: 'currency', currency: 'BRL' })
                     .format(caso.value)
                 }
               </p>
