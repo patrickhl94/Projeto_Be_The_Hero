@@ -13,6 +13,7 @@
 .profile-container header span {
   font-size: 20px;
   margin-left: 24px;
+  color: #929292;
 }
 
 .profile-container header img {
@@ -29,7 +30,7 @@
   height: 60px;
   width: 60px;
   border-radius: 4px;
-  border: 1px solid #dcdce6;
+  border: 1px solid #929292;
   background: transparent;
   margin-left: 16px;
   cursor: pointer;
@@ -43,6 +44,7 @@
 .profile-container h1 {
   margin-top: 80px;
   margin-bottom: 24px;
+  color: #929292;
 }
 
 .profile-container ul {
@@ -50,10 +52,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   list-style: none;
-} 
+}
 
 .profile-container ul li {
-  background: #fff;
+  background: #161616;
   padding: 24px;
   border-radius: 8px;
   position: relative;
@@ -76,16 +78,15 @@
 .profile-container ul li strong {
   display: block;
   margin-bottom: 16px;
-  color: #41414d
+  color: #b4b4b4
 }
 
-.profile-container ul li p + strong {
+.profile-container ul li p+strong {
   margin-top: 32px
 }
 
 .profile-container ul li p {
- color: #737380;
- font-size: 16px;
- line-height: 21px;
-
+  color: #535353;
+  font-size: 16px;
+  line-height: 21px;
 }
