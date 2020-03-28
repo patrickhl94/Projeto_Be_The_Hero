@@ -9,7 +9,7 @@
 
 body {
   font: 400 14px Roboto, sans-serif;
-  background: #f0f0f5;
+  background: #000000;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -24,14 +24,32 @@ buton {
 form input {
   width: 100%;
   height: 60px;
-  color: #333;
-  border: 1px solid #dcdce6;
+  color: rgb(255, 255, 255);
+  border: 1px solid #000000;
   border-radius: 8px;
   padding: 0 24px;
+  background: rgb(95, 95, 95);
+}
+
+form textarea {
+  width: 100%;
+  height: 140px;
+  resize: vertical;
+  margin-top: 10px;
+  min-width: 140px;
+  padding: 16px 24px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background: rgb(95, 95, 95);
+  line-height: 24px;
+}
+::-webkit-input-placeholder {
+  color: #c5c5c5;
 }
 
 .button {
-  color: #ffffff;
+  color: #f1f1f1;
   cursor: pointer;
   width: 100%;
   height: 60px;
@@ -56,7 +74,7 @@ form input {
   display: flex;
   align-items: center;
   margin-top: 40px;
-  color: #41414D;
+  color: rgb(73, 73, 80);
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
