@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import { FiLogIn } from 'react-icons/fi';
@@ -12,6 +12,17 @@ import logoImg from '../../assets/logo.svg';
 export default function Logon() {
   const [id, setId] = useState('')
   const history = useHistory();
+
+  useEffect(() => {
+    const createOngId = localStorage.getItem('create_ong_id');
+
+    if (createOngId) {
+      setId(createOngId)
+    }
+
+    localStorage.clear()
+
+  }, [])
 
   async function handleLogin(event) {
     event.preventDefault();
@@ -40,9 +51,10 @@ export default function Logon() {
             value={id}
             onChange={e => setId(e.target.value)}
           />
-          <button className="button" type="submit">Entrar</button>
+          <button  style={{ textDecoration: 'none'}} className="button" type="submit">Entrar</button>
 
-          <Link className="back-link" to="/register">
+          <Link className="back-link" to="/register"
+            style={{ textDecoration: 'none', color: 'rgb(73, 73, 80)' }}>
             <FiLogIn size={16} color="#E02041" />
           Não tenho cadastro
         </Link>
