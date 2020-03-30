@@ -18,7 +18,7 @@ Nesta aplicação optei por um tema **Dark** nos templates dos *frontends* (Web 
 
 <h4 align="center">
 
-Esta aplicação for desenvolvida durante o workshop (Semana Omnistack 11 ) OFERTADO PELA ©[Rocketseat](https://rocketseat.com.br/) sendo o instrutor: [Diego Fernandes](https://github.com/diego3g).
+Esta aplicação for desenvolvida durante o workshop (Semana Omnistack 11 ) ofertado pela ©[Rocketseat](https://rocketseat.com.br/) sendo o instrutor: [Diego Fernandes](https://github.com/diego3g).
 
 </h4>
 
@@ -187,7 +187,7 @@ npm build ou yarn build
 - `src/pages/` -> páginas do projeto
 
 - `src/services/api.js` -> chamada a api do back-end.
-Adicione o endereço do servidor back-end da aplicação à [linha 4](https://github.com/mateusfg7/BeTheHero-Frontend/blob/master/src/services/api.js#L4) (`baseURL: '',`)
+Adicione o endereço do servidor back-end da aplicação à linha 4 (`baseURL: '',`)
 ```javascript
 import axios from 'axios';
 
