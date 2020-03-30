@@ -13,7 +13,7 @@
 
 Be The Hero (Seja um herói) é uma aplicação que conecta pessoas que tem vontade de ajudar ONGS doando um valor para tratar algum caso específico.
 
-Nesta aplicação eu optei por um tema **Dark** nos templates dos *frontends*
+Nesta aplicação optei por um tema **Dark** nos templates dos *frontends* (Web e Mobile)
 </h3>
 
 <h4 align="center">
@@ -218,7 +218,7 @@ export default api;
 ---
 <h1 align="center"> 
  
- **Screenshots do Frontend da Aplicação**
+ **Screenshots do Frontend React JS**
 
 </h1>
 
@@ -239,4 +239,24 @@ _Página de casos cadastrados_
 _Página para criar um novo caso_
 
 ![Detalhes](assets/print04.png)
+
+---
+<h1 align="center"> 
+ 
+ **Screenshots do Frontend (Mobile) React Native**
+
+</h1>
+
+<h3 align="center"> 
+
+ 1° tela: splash | 2° tela: Lista de casos | 3° tela: Detalhe do caso |
+
+</h3>
+
+----
+<img height="500px" src="assets/print07.jpeg">
+
+<img height="500px" src="assets/print05.jpeg">
+
+<img height="500px" src="assets/print06.jpeg">
 
