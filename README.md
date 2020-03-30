@@ -256,7 +256,7 @@ _Página para criar um novo caso_
 ----
 <img align="left" height="600px" src="assets/print07.jpeg">
 
-<img align="right" height="600px" src="assets/print05.jpeg">
+<img align="center" height="600px" src="assets/print05.jpeg">
 
-<img align="center" height="600px" src="assets/print06.jpeg">
+<img align="right"  height="600px" src="assets/print06.jpeg">
 
