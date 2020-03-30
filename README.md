@@ -254,9 +254,9 @@ _Página para criar um novo caso_
 </h3>
 
 ----
-<img height="500px" src="assets/print07.jpeg">
+<img height="400px" src="assets/print07.jpeg">
 
-<img height="500px" src="assets/print05.jpeg">
+<img height="400px" src="assets/print05.jpeg">
 
-<img height="500px" src="assets/print06.jpeg">
+<img height="400px" src="assets/print06.jpeg">
 
