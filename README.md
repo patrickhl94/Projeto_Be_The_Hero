@@ -249,14 +249,14 @@ _Página para criar um novo caso_
 
 <h3 align="center"> 
 
- 1° tela: splash | 2° tela: Lista de casos | 3° tela: Detalhe do caso |
+ 1° tela: splash | 2° tela: Detalhe do caso | 3° tela: Lista de casos
 
 </h3>
 
 ----
 <img align="left" height="600px" src="assets/print07.jpeg">
 
-<img align="center" height="600px" src="assets/print05.jpeg">
+<img align="right" height="600px" src="assets/print05.jpeg">
 
-<img align="right"  height="600px" src="assets/print06.jpeg">
+<img align="center" height="600px" src="assets/print06.jpeg">
 
